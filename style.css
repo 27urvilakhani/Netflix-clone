@@ -1,0 +1,551 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.main {
+  background-image: url("assets/image/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+  width: 100vw;
+}
+
+.main .box {
+  height: 80vh;
+  width: 100%;
+  opacity: 0.34;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 90vw;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+nav img.logo {
+  width: clamp(80px, 20vw, 150px);
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.buttons .black,
+.buttons .red {
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.buttons .black {
+  background-color: black;
+}
+
+.buttons .red {
+  background-color: red;
+}
+
+.buttons .black:hover {
+  background-color: rgb(27, 26, 26);
+}
+
+.buttons .red:hover {
+  background-color: rgb(244, 53, 53);
+}
+
+.firstbox {
+  width: 100vw;
+  color: aliceblue;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  gap: 2rem; 
+}
+
+.firstbox .firstline {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+
+.firstbox .secondline {
+  font-size: x-large;
+  font-weight: 500;
+  color: white;
+}
+
+.firstbox .thirdline {
+  font-size: large;
+  font-weight: 500;
+  color: white; 
+}
+
+.firstline, .secondline, .thirdline {
+  display: block;
+  z-index: 2;
+}
+
+.emailbox input {
+  width: 300px;
+  height: 30px;
+  color: white;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 2;
+  position: relative;
+}
+
+.start {
+  height: 30px;
+  width: 90px;
+  border: none;
+  border-radius: 3px;
+  background-color: red;
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+
+.separation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+  position: relative;
+  z-index: 20;
+}
+
+.secondbox {
+  height: 500px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.lineone, .linetwo {
+  display: block;
+  text-align: left;
+  padding-left: 400px;
+}
+
+.secondbox .lineone {
+  font-size: xxx-large;
+  font-weight: 900;
+}
+
+.secondbox .linetwo {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.imgtv {
+  position: relative;
+}
+
+.imgtv img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.imgtv video {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 535px;
+}
+
+.thirdbox {
+  height: 500px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.tbcontent .lineone {
+  font-size: 53px;
+  font-weight: 800;
+}
+
+.tbcontent .linetwo {
+  font-size: 23px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.forthbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.forthbox .fbcontent {
+  flex: 1;
+  padding-left: 100px;
+  color: white;
+}
+
+.forthbox .fbcontent span:first-child {
+  font-size: 53px;
+  display: block;
+  font-weight: 800;
+}
+
+.forthbox .fbcontent span:last-child {
+  font-size: 23px;
+  display: block;
+  margin-top: 10px;
+}
+
+.forthbox .forthimg {
+  position: relative;
+  width: 555px;
+  flex-shrink: 0;
+}
+
+.forthimg img {
+  width: 100%;
+  display: block;
+}
+
+.forthimg video {
+  position: absolute;
+  top: 70px;     
+  left: 70px;    
+  width: 415px;
+  height: 255px;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.fifthbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  min-height: 500px; 
+}
+
+.fifthimg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fifthimg img {
+  width: 100%;
+  max-width: 900px;
+  height: 603px;
+  display: block;
+}
+
+.ftcontent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.ftcontent span:first-child {
+  font-size: 53px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.ftcontent span:last-child {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.FAQ h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.FAQ {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+/* ========== MEDIA QUERY FOR SMALL SCREENS (≤ 768px) ========== */
+@media screen and (max-width: 768px) {
+  .firstbox .firstline {
+    font-size: 32px;
+  }
+
+  .firstbox .secondline,
+  .firstbox .thirdline {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .emailbox input {
+    width: 70vw;
+    height: 35px;
+  }
+
+  .start {
+    width: 80px;
+    height: 35px;
+  }
+
+  .secondbox,
+  .thirdbox,
+  .forthbox,
+  .fifthbox {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .lineone,
+  .linetwo {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .imgtv img,
+  .forthimg img,
+  .forthimg video,
+  .imgtv video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    position: static;
+  }
+
+  .forthimg video {
+    top: 0;
+    left: 0;
+  }
+
+  .fbcontent {
+    padding-left: 0 !important;
+  }
+
+  .ftcontent {
+    padding: 1rem 0;
+  }
+
+  .faqbox {
+    max-width: 90vw;
+  }
+
+  footer {
+    max-width: 90vw;
+    padding: 30px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* ========== MEDIA QUERY FIRST (≤ 445px) ========== */
+@media screen and (max-width: 445px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  nav img.logo {
+    width: 40vw;
+    max-width: 150px;
+    height: auto;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .buttons .black,
+  .buttons .red {
+    width: auto;
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .section,
+  .firstbox,
+  .content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* ========== MEDIA QUERY FOR VERY SMALL SCREENS (≤ 375px) ========== */
+@media screen and (max-width: 375px) {
+  .firstbox .firstline {
+    font-size: 24px;
+  }
+
+  .firstbox .secondline,
+  .firstbox .thirdline {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .emailbox input {
+    width: 65vw;
+    font-size: 0.8rem;
+  }
+
+  .start {
+    width: 70px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .lineone {
+    font-size: 24px;
+  }
+
+  .linetwo {
+    font-size: 16px;
+    padding: 0 1rem;
+  }
+
+  .imgtv img,
+  .imgtv video,
+  .forthimg img,
+  .forthimg video {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    position: static !important;
+  }
+
+  .forthimg video {
+    top: 0;
+    left: 0;
+  }
+
+  .tbcontent .lineone {
+    font-size: 26px;
+  }
+
+  .tbcontent .linetwo {
+    font-size: 16px;
+    padding: 0 1rem;
+  }
+
+  .fbcontent span:first-child,
+  .ftcontent span:first-child {
+    font-size: 26px;
+  }
+
+  .fbcontent span:last-child,
+  .ftcontent span:last-child {
+    font-size: 15px;
+    padding: 0 1rem;
+  }
+
+  .faqbox {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
